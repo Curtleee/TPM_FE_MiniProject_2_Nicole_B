@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #eeeef0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1{
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+}
+
+p{
+    color: #7b7b7b;
+    font-size: 14px;
+    line-height: 200%;
+}
+
+.input{
+    display: flex;
+    margin: 20px 0;
+}
+
+#todo{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+#add-btn{
+    background-color: #5016ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#add-btn:hover{
+    background-color: #3e10cc;
+}
+
+.item{
+    background-color: #7b7b7b;
+}
+
+#todo-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wrap{
+    width: 450px;
+    height: 430px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #eeeef0;
+    border-radius: 5px;
+}
+
+
+.todo-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.todo-item span{
+    flex: 1;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.todo-item-completed{
+    background-color: #e0ffe0;
+    text-decoration: line-through;
+    color: #555;
+}
+
+.todo-item input[type="checkbox"]{
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #dedede;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.todo-item input[type="checkbox"]:checked{
+    background-color: #5016ff;
+    border-color: #5016ff;
+    position: relative;
+}
+
+.todo-item input[type="checkbox"]:checked::after{
+    content: "✓";
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.delete-btn{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
